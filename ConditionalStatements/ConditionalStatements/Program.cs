@@ -6,6 +6,13 @@ namespace ConditionalStatements
     {
         static void Main(string[] args)
         {
+            ImplementationWithSwitch();
+
+            Console.WriteLine();
+        }
+
+        static void ImplementationWithIf()
+        {
             Console.WriteLine("Menu - please type an option:");
             Console.WriteLine("1) File");
             Console.WriteLine("2) Edit");
@@ -79,7 +86,91 @@ namespace ConditionalStatements
                 }
             }
 
-            Console.WriteLine();
+        }
+
+        static void ImplementationWithSwitch()
+        {
+            Console.WriteLine("Menu - please type an option:");
+            Console.WriteLine("1) File");
+            Console.WriteLine("2) Edit");
+            Console.WriteLine("3) View");
+            Console.Write("Please type your option:");
+            string optionLevel1 = Console.ReadLine();
+
+            switch (optionLevel1)
+            {
+                case "File":
+                    Console.WriteLine("Menu - please type an sub-option:");
+                    Console.WriteLine("1.1) New");
+                    Console.WriteLine("1.2) Open");
+                    Console.WriteLine("1.3) Clone");
+                    Console.Write("Please type your option:");
+                    string optionLevel2For1 = Console.ReadLine();
+
+                    switch (optionLevel2For1)
+                    {
+                        case "New":
+                            Console.Write("You choosed to create a new file");
+                            break;
+
+                        case "Open":
+                            Console.Write("You choosed to open an existing file");
+                            break;
+
+                        case "Clone":
+                            Console.Write("You choosed to clone a Github repository");
+                            break;
+                    }
+                    break;
+
+                case "Edit":
+                    Console.WriteLine("Menu - please type an sub-option:");
+                    Console.WriteLine("2.1) Cut");
+                    Console.WriteLine("2.2) Copy");
+                    Console.WriteLine("2.3) Paste");
+                    Console.Write("Please type your option:");
+                    string optionLevel2For2 = Console.ReadLine();
+
+                    switch (optionLevel2For2)
+                    {
+                        case "Cut":
+                            Console.Write("You choosed to Cut some text");
+                            break;
+
+                        case "Copy":
+                            Console.Write("You choosed to Copy some text");
+                            break;
+
+                        case "Paste":
+                            Console.Write("You choosed to Paste some text");
+                            break;
+                    }
+                    break;
+
+                case "View":
+                    Console.WriteLine("Menu - please type an sub-option:");
+                    Console.WriteLine("3.1) Solution Explorer");
+                    Console.WriteLine("3.2) Git Changes");
+                    Console.WriteLine("3.3) Cloud Explorer");
+                    Console.Write("Please type your option:");
+                    string optionLevel2For3 = Console.ReadLine();
+
+                    switch (optionLevel2For3)
+                    {
+                        case "Solution Explorer":
+                            Console.Write("You choosed to view 'Solution Explorer' window");
+                            break;
+
+                        case "Git Changes":
+                            Console.Write("You choosed to view 'Git Changes' window");
+                            break;
+
+                        case "Cloud Explorer":
+                            Console.Write("You choosed to view 'Cloud Explorer' window");
+                            break;
+                    }
+                    break;
+            }
         }
     }
 }
