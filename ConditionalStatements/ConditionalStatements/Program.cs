@@ -20,6 +20,7 @@ namespace ConditionalStatements
                 Console.WriteLine("1.3) Clone");
                 Console.Write("Please type your option:");
                 string optionLevel2 = Console.ReadLine();
+
                 if (string.Equals(optionLevel2, "New", StringComparison.OrdinalIgnoreCase))
                 {
                     Console.Write("You choosed to create a new file");
@@ -41,6 +42,7 @@ namespace ConditionalStatements
                 Console.WriteLine("2.3) Paste");
                 Console.Write("Please type your option:");
                 string optionLevel2 = Console.ReadLine();
+
                 if (string.Equals(optionLevel2, "Cut", StringComparison.OrdinalIgnoreCase))
                 {
                     Console.Write("You choosed to Cut some text");
@@ -62,6 +64,7 @@ namespace ConditionalStatements
                 Console.WriteLine("3.3) Cloud Explorer");
                 Console.Write("Please type your option:");
                 string optionLevel2 = Console.ReadLine();
+
                 if (string.Equals(optionLevel2, "Solution Explorer", StringComparison.OrdinalIgnoreCase))
                 {
                     Console.Write("You choosed to view 'Solution Explorer' window");
